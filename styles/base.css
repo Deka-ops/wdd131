@@ -129,7 +129,10 @@ main {
     margin: 10px auto; /* Centers the image */
     border: 2px solid #000801; /* Optional: White border for contrast */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Light shadow effect */
+    float: right; /* aligns the picture to the right */
+    margin: 20px;
 }
+
 
 /* Reduce the image size inside the cards */
 .card img {
