@@ -98,7 +98,6 @@ main {
     font-size: 0.85em;
     padding: 15px;
     width: 90%;
-    max-width: 450px;
     margin: 15px auto;
     border-radius: 8px;
     background: #ffffff; /* White Background */
@@ -108,7 +107,7 @@ main {
 
 /* Reduce heading sizes in the cards */
 .card h2 {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bold;
     color: #ffffff; /* Blue Heading for contrast */
     padding: 10px;
@@ -140,12 +139,50 @@ main {
     position:relative;
 }
 
+/* This says the div with the class aboutgrid is split into 3 columns, one that's 3 wide and one that's 1 wide. */
+.aboutgrid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+ 
+/* This says the paragraph tag within the aboutgrid div should be assigned the the wide column */
+.aboutgrid p {
+    grid-column: 1 / 1;
+}
+ 
+/* This says the image tag within the aboutgrid div should be assigned to the thin column */
+.aboutgrid img {
+    grid-column: 2 / 2;
+}
+ 
+/*The grid-template-columns tag specifies how many columns and how wide they are. Then you can just align your
+ text to the wide column and your image to the thin one.*/
+
+ /* Adjust image */
+
+.countrysection {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.countrysection img{
+    grid-column: 1 / 1;
+    float: left;
+    width: 100px;
+}
+
+.countrysection p {
+    grid-column: 3 / 1;
+
+}
+ 
 /* Reduce the image size inside the cards */
 .card img {
-    max-width: 75%;
+    max-width: 200px;
     height: auto;
-    display: block;
+    display: grid;
     margin: 10px auto;
+    float: left;
 }
 
 
@@ -158,15 +195,6 @@ main {
 
 .location .text {
     font-size: 0.85em;
-}
-
-/* Adjust image */
-.location .flag {
-    max-width: 60%;
-    height: 80px;
-    margin: 10px auto;
-    float: left;
-    margin-top: -120px;
 }
 
 /* Footer */
