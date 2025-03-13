@@ -128,7 +128,7 @@ main {
 /* Profile Image - Set to Passport Size */
 .about-content .image img {
     width: 120px; /* Width for passport size */
-    height: 100x; /* Height for passport size */
+    height: 100px; /* Height for passport size */
     object-fit: cover; /* Ensures the image fits perfectly */
     border-radius: 5px; /* Slight rounded edges for a clean look */
     margin: 10px; /* Centers the image */
