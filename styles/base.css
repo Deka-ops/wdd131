@@ -89,6 +89,8 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    position:relative;
+    text-align: start;
 }
 
 /* Card Styling (For About Me, Web Dev Resources, and Location) */
@@ -108,7 +110,11 @@ main {
 .card h2 {
     font-size: 1em;
     font-weight: bold;
-    color: #0077cc; /* Blue Heading for contrast */
+    color: #ffffff; /* Blue Heading for contrast */
+    padding: 10px;
+    background-color: #0077cc;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
 }
 
 /* Adjust paragraph, list, and general text sizes */
@@ -122,17 +128,17 @@ main {
 /* Profile Image - Set to Passport Size */
 .about-content .image img {
     width: 120px; /* Width for passport size */
-    height: 150px; /* Height for passport size */
+    height: 100x; /* Height for passport size */
     object-fit: cover; /* Ensures the image fits perfectly */
     border-radius: 5px; /* Slight rounded edges for a clean look */
-    display: block;
-    margin: 10px auto; /* Centers the image */
+    margin: 10px; /* Centers the image */
     border: 2px solid #000801; /* Optional: White border for contrast */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Light shadow effect */
     float: right; /* aligns the picture to the right */
-    margin: 20px;
+    max-width: 200px;
+    margin-top: -160px;
+    position:relative;
 }
-
 
 /* Reduce the image size inside the cards */
 .card img {
@@ -141,6 +147,7 @@ main {
     display: block;
     margin: 10px auto;
 }
+
 
 /* Location Section Styling */
 .location h3 {
@@ -156,9 +163,10 @@ main {
 /* Adjust image */
 .location .flag {
     max-width: 60%;
-    height: auto;
-    display: block;
+    height: 80px;
     margin: 10px auto;
+    float: left;
+    margin-top: -120px;
 }
 
 /* Footer */
@@ -169,3 +177,13 @@ footer {
     color: white;
     font-size: 12px;
 }
+
+main {
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 95vw;
+    max-height: 95vw;
+    margin: 0 auto;
+}
+
