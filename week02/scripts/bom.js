@@ -12,3 +12,18 @@ let el = document.getElementById("close-button");
 console.log(el.ariaLabel); // "Close"
 el.ariaLabel = "Close dialog";
 console.log(el.ariaLabel); // "Close dialog"
+button.addEventListener('click', function() {
+    // Code to execute when the button is clicked
+  });
+  buttonElement.addEventListener('keyup', function() {
+    // Code to execute when a key is released
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    // Code to execute when the DOM is parsed
+  });
+  deleteButton.addEventListener('click', function () {
+    list.removeChild(li);
+    input.focus();
+  });
+  input.value = '';
+  input.focus();
