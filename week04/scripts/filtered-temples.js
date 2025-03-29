@@ -84,3 +84,66 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bern-switzerland/400x250/bern-switzerland-temple-lds-935504-wallpaper.jpg"
     },
   ];
+
+  displayTempleInfo(temples);
+
+const oldTemples = document.querySelector("#old");
+const newTemples = document.querySelector("#new");
+const largeTemples = document.querySelector("#large");
+const smallTemples = document.querySelector("#small");
+const templesHome = document.querySelector("#home");
+
+oldTemples.addEventListener("click", () => {
+    let yearBuilt = temples.filter(temple => parseInt(temple.dedicated) < 1900);
+    displayTempleInfo(yearBuilt);
+});
+
+newTemples.addEventListener("click", () =>{
+    let yearBuilt = temples.filter(temple => parseInt(temple.dedicated) > 2000);
+    displayTempleInfo(yearBuilt);
+});
+
+largeTemples.addEventListener("click", () =>{
+    let size = temples.filter(temple => parseInt(temple.area) > 90000);
+    displayTempleInfo(size);
+
+});
+
+smallTemples.addEventListener("click", ()=>{
+    let small = temples.filter(temple => parseInt(temple.area) < 10000);
+    displayTempleInfo(small);
+});
+
+templesHome.addEventListener("click", () =>{
+    displayTempleInfo(temples);
+});
+
+function displayTempleInfo(filteredtemples) {
+    document.querySelector("main").innerHTML = "";
+    filteredtemples.forEach(temple =>{
+        let info = document.createElement("figure");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let picture = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Date Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Square Footage:</span> ${temple.area} sq ft`;
+
+        picture.setAttribute("src", temple.imageUrl);
+        picture.setAttribute("alt", `${temple.templeName} Temple`);
+        picture.setAttribute("loading", "lazy");
+
+        info.appendChild(name);
+        info.appendChild(location);
+        info.appendChild(dedication);
+        info.appendChild(area);
+        info.appendChild(picture);
+
+        document.querySelector("main").appendChild(info);
+
+    });
+}
