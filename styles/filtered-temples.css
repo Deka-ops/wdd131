@@ -1,3 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+
 /* =============================
    CSS VARIABLES
    ============================= */
@@ -11,58 +18,49 @@
     --transition-speed: 0.3s;
 }
 
-/* =============================
-   GOOGLE FONTS
-   ============================= */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap');
+/*CSS for elements*/
 
-/* Custom Font Styles */
-.bangers-regular {
-    font-family: "Bangers", system-ui;
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-items: center;
 }
 
-/* =============================
-   GENERAL STYLES
-   ============================= */
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--background-color);
-    text-align: center; /* Ensures text is centered */
-    margin: 0;
-    padding: 0;
-}
-
-/* =============================
-   HEADER & NAVIGATION
-   ============================= */
-header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+header{
     padding: 1rem;
     display: grid;
     text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
-/* Navigation */
+footer{
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
 nav {
     display: none;
-    flex-direction: column;
     justify-content: space-around;
     list-style: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     position: absolute;
     top: 60px;
     width: 100%;
-
 }
 
-
-
 nav a {
+    display: none;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: var(--text-color);
@@ -70,22 +68,53 @@ nav a {
 
 nav a:hover{
     font-style: oblique;
-    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+    color: var(--background-color);
 } 
+
+ul{
+    list-style-type: none;
+}
 
 figure, figcaption{
     display: grid;
     justify-content: center;
     font-size: 1rem;
+
 }
 
 figure{
+    margin: 1rem;
     justify-items: center;
     background-color: var(--background-color);
     border-radius: 1rem;
     box-shadow:  0 4px 15px 10px #4b0076, 0 6px 20px 0 #F8F8F7; 
 }
 
+h2, p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--primary-color);  
+    color: var(--text-color);
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+}
+
+/*hamburger button effect*/
 #menu-toggle {
     background: none;
     border: none;
