@@ -3,8 +3,8 @@ let aCourse = {
     title: "Dynamic Web Fundamentals",
     credits: 2,
     sections : [
-        { section: "001", enrolled: 95, instructor: "Roberto Diaz Rodriguez" },
-        { section: "002", enrolled: 80, instructor: "Sarah Gobble" }
+        { sectionNumber: "001", enrolled: 95, instructor: "Roberto Diaz Rodriguez" },
+        { sectionNumber: "002", enrolled: 80, instructor: "Sarah Gobble" }
       ]
   };
 
@@ -20,8 +20,10 @@ let aCourse = {
             </tr>`;
   }
   
-  function renderSections(course) {
+  function renderSections(sections) {
     const html = sections.map(sectionTemplate);
     document.querySelector("#sections tbody").innerHTML = html.join("");
   }
 
+setCourseInformation(aCourse);
+renderSections(aCourse.sections);
