@@ -29,10 +29,10 @@ header {
     background-color: #283618;
     /* Dark Green */
     color: white;
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 1rem;
 }
 
 header img {
@@ -44,6 +44,7 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     color: white;
+    
 }
 
 nav a:hover {
@@ -218,7 +219,42 @@ footer {
     }
 }
 
+/*hamburger button effect*/
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
+#menu::before {
+    content: "☰"
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open a{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        text-align: center;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
  /* Mobile Styles */
  @media (max-width: 768px) {
     header {

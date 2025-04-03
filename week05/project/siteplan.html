@@ -13,18 +13,22 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/siteplan.css">
+    <link rel="stylesheet" href="../styles/siteplan_large.css">
     <script src="scripts/siteplan.js" defer></script>
 </head>
 
 <body>
     <header>
         <img src="../images/ladybird-logo.webp" alt="Ladybird Global Collections Logo">
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#shop">Shop</a>
-            <a href="#contact">Contact Us</a>
-            <a href="#account">My Account</a>
+            <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#account">My Account</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -80,6 +84,12 @@
             <button type="submit">Register</button>
         </form>
     </section>
+    <div class="hero">
+        <picture>
+            <source srcset="../images/siteplan.webp" media="(min-width: 786px)">
+            <img src="../images/ladybird_global_home_page.webp" alt="mockup" width="500" height="706">
+        </picture>
+    </div>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> 2025 - Ladybird Global Collections  ! @
