@@ -82,6 +82,7 @@ section {
     text-align: center;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    color: black;
 }
 
 #shop li:hover {
@@ -103,7 +104,7 @@ section {
 }
 
 #contact a {
-    color: #bc6c25;
+    color: #522701;
 }
 
 #contact a:hover {
@@ -173,6 +174,15 @@ footer p {
 
 .social img {
     max-width: 100px;
+}
+
+.social {
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social img {
+    width: 3em;
 }
 
 footer {
