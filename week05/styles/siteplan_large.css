@@ -1,3 +1,23 @@
-@media  screen and (min-width 640px) {
-    
+ /* Large Screen Styles (Desktops/Tablets) */
+ @media (min-width: 1024px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    #shop ul {
+        grid-template-columns: repeat(4, 1fr); /* 4 items per row on large screens */
+    }
+
+    #shop li {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
 }
