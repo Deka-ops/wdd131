@@ -112,6 +112,14 @@ nav a:hover {
     /* Golden Yellow */
 }
 
+nav li {
+    list-style-type: none;
+}
+
+.nav-menu {
+    padding-inline-start: 0px;
+}
+
 /* Section Styling */
 section {
     margin: 20px auto;

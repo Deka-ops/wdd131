@@ -27,10 +27,6 @@
          font-weight: 600;
      }
 
-     nav li {
-        list-style-type: none;
-    }
-
      #menu {
          display: none;
      }
