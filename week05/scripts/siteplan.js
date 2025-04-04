@@ -14,3 +14,24 @@ The CSS class rules will handle the different views, layouts, and displays.
 🗝️ JavaScript only applies the class value or not.
 */
 
+
+// Wait for the DOM to fully load
+document.addEventListener("DOMContentLoaded", () => {
+    // ===== HAMBURGER MENU TOGGLE =====
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+        menuToggle.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
+    });
+
+    // ===== UPDATE CURRENT YEAR IN FOOTER =====
+    const currentYearSpan = document.getElementById("currentyear");
+    const currentYear = new Date().getFullYear();
+    currentYearSpan.textContent = currentYear;
+
+    // ===== UPDATE LAST MODIFIED DATE =====
+    const lastModifiedSpan = document.querySelector("#lastModified span");
+    lastModifiedSpan.textContent = document.lastModified;
+});
