@@ -13,74 +13,81 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles/ladybird.css">
   <script src="scripts/account.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <img src="../images/ladybird-logo.webp" alt="Ladybird Global Collections Logo" loading="lazy">
-    <h1>Ladybird Global Collections</h1>
-    <p>Express Your Innermost Thoughts Through Fashion</p>
-  </header>
-
-  <nav>
-    <a href="ladybird.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="collections.html">Shop</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="account.html">My Account</a>
-  </nav>
-
-  <main>
-    <h2>Account Access</h2>
-    <div class="account-container">
-      <!-- Registration Side -->
-      <section class="account-panel" id="registration">
-        <h3>Register</h3>
-        <form id="register-form">
-          <label for="reg-username">Username:</label>
-          <input type="text" id="reg-username" name="username" placeholder="Enter your username" required>
-          
-          <label for="reg-email">Email:</label>
-          <input type="email" id="reg-email" name="email" placeholder="Enter your email" required>
-          
-          <label for="reg-password">Password:</label>
-          <input type="password" id="reg-password" name="password" placeholder="Enter your password" required>
-          
-          <button type="submit">Create Account</button>
-        </form>
-      </section>
-
-      <!-- Login Side -->
-      <section class="account-panel" id="login">
-        <h3>Login</h3>
-        <form id="login-form">
-          <label for="login-email">Email:</label>
-          <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
-          
-          <label for="login-password">Password:</label>
-          <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
-          
-          <button type="submit">Login</button>
-        </form>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="currentyear"></span> 2025 - Ladybird Global Collections | Zone 8, Ekeoha Shopping Center, Aba, Abia State</p>
-    <p id="lastModified">Last Modification: <span></span></p>
-    <a href="citations.html">References</a>
-    <div class="social">
-      <a href="https://facebook.com" aria-label="Facebook">
-        <img src="../images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
-      </a>
-      <a href="https://instagram.com" aria-label="Instagram">
-        <img src="../images/instagram_logo.svg" alt="Instagram" loading="lazy">
-      </a>
-      <a href="https://wa.me/1234567890" aria-label="WhatsApp">
-        <img src="images/my_whatsapp_logo.png" alt="WhatsApp" loading="lazy">
-      </a>
-    </div>
-  </footer>
-</body>
-</html>
+  <body>
+    <header>
+      <img src="../images/ladybird-logo.webp" alt="Ladybird Global Collections Logo" loading="lazy">
+      <h1>Ladybird Global Collections</h1>
+      <p>Express Your Innermost Thoughts Through Fashion</p>
+    </header>
+  
+    <nav>
+      <a href="ladybird.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="collections.html">Shop</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="account.html">My Account</a>
+    </nav>
+  
+    <main>
+      <h2>Account Access</h2>
+      <div class="account-container">
+        <!-- Registration Panel -->
+        <section class="account-panel" id="registration">
+          <h3>Register</h3>
+          <form id="register-form">
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="username" placeholder="Enter your username" required>
+            
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" name="email" placeholder="Enter your email" required>
+            
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Create Account</button>
+          </form>
+        </section>
+  
+        <!-- Login Panel -->
+        <section class="account-panel" id="login">
+          <h3>Login</h3>
+          <form id="login-form">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+            
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+            
+            <div class="checkbox-container">
+              <input type="checkbox" id="save-password" name="save-password">
+              <label for="save-password">Remember Me</label>
+            </div>
+            
+            <button type="submit">Login</button>
+          </form>
+          <div class="additional-options">
+            <span></span>
+            <a href="forgot-password.html">Forgot Password?</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  
+    <footer>
+      <p>&copy; <span id="currentyear"></span> 2025 - Ladybird Global Collections | Zone 8, Ekeoha Shopping Center, Aba, Abia State</p>
+      <p id="lastModified">Last Modification: <span></span></p>
+      <a href="citations.html">References</a>
+      <div class="social">
+        <a href="https://facebook.com" aria-label="Facebook">
+          <img src="../images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram">
+          <img src="../images/instagram_logo.svg" alt="Instagram" loading="lazy">
+        </a>
+        <a href="https://wa.me/1234567890" aria-label="WhatsApp">
+          <img src="images/my_whatsapp_logo.png" alt="WhatsApp" loading="lazy">
+        </a>
+      </div>
+    </footer>
+  </body>
+  </html>
