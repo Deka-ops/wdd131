@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us - Ladybird Global Collections</title>
+  <title>Ladybird Global Collections | Shop</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +12,12 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/ladybird.css">
-  <script src="scripts/ladybird.js" defer></script>
+  <script src="scripts/shop.js" defer></script>
 </head>
-<body>
 
+<body>
   <header>
-    <img src="images/ladybird-logo.webp" alt="Ladybird Logo" loading="lazy">
+    <img src="../images/ladybird-logo.webp" alt="Ladybird Global Collections Logo" loading="lazy">
     <h1>Ladybird Global Collections</h1>
     <p>Express Your Innermost Thoughts Through Fashion</p>
   </header>
@@ -31,26 +31,17 @@
   </nav>
 
   <main>
-    <section>
-      <h2>Our Mission</h2>
-      <p>
-        At Ladybird Global Collections, our mission is to empower individuals to express their identity through fashion. We specialize in curating and delivering high-quality, luxurious fabrics that inspire creativity and elegance across all cultures.
-      </p>
-    </section>
+    <h2>Explore Our Fabrics</h2>
+    <label for="category-select">Filter by Fabric Type:</label>
+    <select id="category-select">
+      <option value="all">All Fabrics</option>
+      <option value="silk">Silk</option>
+      <option value="cotton">Cotton</option>
+      <option value="linen">Linen</option>
+      <option value="tulle">Tulle</option>
+    </select>
 
-    <section>
-      <h2>Our Vision</h2>
-      <p>
-        We envision a world where every individual has access to premium, ethically sourced fabrics that celebrate cultural diversity and timeless fashion. Our goal is to become a global leader in fashion textiles, championing beauty, creativity, and sustainable craftsmanship.
-      </p>
-    </section>
-
-    <section>
-      <h2>Why Choose Ladybird?</h2>
-      <p>
-        With a heritage rooted in elegance and innovation, we bridge tradition and modernity through fabrics that tell stories. From native African George wrappers to exquisite bridal lace and couture textiles, our collection is tailored for the modern designer and fashion lover.
-      </p>
-    </section>
+    <div id="product-container" class="product-grid"></div>
   </main>
 
   <footer>
@@ -59,16 +50,15 @@
     <a href="citations.html">References</a>
     <div class="social">
       <a href="https://facebook.com" aria-label="Facebook">
-        <img src="images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
+        <img src="../images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
       </a>
       <a href="https://instagram.com" aria-label="Instagram">
-        <img src="images/instagram_logo.svg" alt="Instagram" loading="lazy">
+        <img src="../images/instagram_logo.svg" alt="Instagram" loading="lazy">
       </a>
       <a href="https://wa.me/1234567890" aria-label="WhatsApp">
         <img src="images/my_whatsapp_logo.png" alt="WhatsApp" loading="lazy">
       </a>
     </div>
   </footer>
-
 </body>
 </html>
