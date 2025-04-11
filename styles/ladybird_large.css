@@ -124,10 +124,21 @@
     background-color: #fefae0;
   }
 
+/* Base product grid (mobile-first) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
   .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
   }
+}
+
 
   /* Footer */
   footer {
