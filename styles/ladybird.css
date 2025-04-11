@@ -449,66 +449,39 @@ footer {
 }
 
 
-/* Hamburger button effect */
+/*hamburger button effect*/
 #menu-toggle {
   background: none;
   border: none;
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
-  position: absolute;
+  position:absolute;
   top: 1rem;
   right: 1rem;
-  z-index: 999;
 }
 
-/* Hamburger icon */
 #menu::before {
-  content: "☰";
+  content: "☰"
 }
 
-/* Close icon when open */
 #menu.open::before {
-  content: "✖";
+  content: "X";
 }
 
-/* Mobile nav hidden by default */
-nav {
-  
-  flex-direction: row;
-  position: static;
-  justify-content: center;
-  align-items: center;
-  background-color: #606c38;
-  box-shadow: none;
-  gap: 2rem;
+.open a{
+  display: block;
 }
 
-/* When menu is open */
-nav.open {
-  display: flex;
-}
-
-/* Nav links */
-nav a {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: bold;
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-}
-
-/* Desktop view */
 @media (min-width: 768px) {
-  #menu-toggle {
-    display: none;
+  nav {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      text-align: center;
   }
 
-  nav a {
-    background: none;
-    color: var(--text);
-    padding: 0;
+  #menu-toggle {
+      display: none;
   }
 }
