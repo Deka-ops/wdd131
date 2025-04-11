@@ -15,3 +15,7 @@ const today = new Date();
 currentyear.innerHTML = today.getFullYear()
  
 lastModified.innerHTML = document.lastModified
+
+function shopNow() {
+    window.location.href = "#shop";
+  }
