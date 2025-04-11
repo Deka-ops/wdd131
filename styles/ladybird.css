@@ -356,7 +356,12 @@ footer {
   background-color: rgba(40, 54, 24, 0.75);
   padding: 2rem;
   border-radius: 1rem;
+  max-width: 100%;
   display: inline-block;
+}
+
+.hero-content img {
+  max-width: 100%;
 }
 
 .hero h1 {
@@ -366,6 +371,7 @@ footer {
 .hero p {
   margin: 1rem 0;
   color: #fefae0;
+  text-align: center;
 }
 
 .hero button {
@@ -397,7 +403,7 @@ footer {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   gap: 1.5rem;
 }
 
